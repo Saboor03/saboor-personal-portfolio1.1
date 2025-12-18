@@ -399,6 +399,30 @@ a {
     color: #fff;
     margin: 0 var(--mb-2);
 }
+
+  /* WhatsApp Floating Icon */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .whatsapp:hover {
+      background: #1ebe5d;
+    }
+
 @media screen and (min-width: 768px) {
     .section-title{
         font-size: 2.5rem;
@@ -443,5 +467,12 @@ a {
     }
     .home_img {
         right: 10%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+       .home_title {
+        margin-top: 60px;
+        font-size: var(--h2-font-size);
     }
 }
