@@ -478,4 +478,7 @@ a {
         margin-top: 60px;
         font-size: var(--h2-font-size);
     }
+    .home_img {
+        /* width: 200px; */
+    }
 }
