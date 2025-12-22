@@ -386,6 +386,9 @@ a {
     text-align: center;
     font-weight: var(--font-semmi);
     padding: 2rem;
+    margin-bottom: -50px;
+    margin-left: 0;
+    margin-right: 0;
 }
 .footer_title {
     font-size: 2rem;
