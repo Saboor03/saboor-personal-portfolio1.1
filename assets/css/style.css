@@ -190,45 +190,59 @@ a {
 
 /* home */
 .home{
-    height: calc(200vh-10rem);
-    row-gap: 1rem;
+    height: auto;
+    row-gap: 2rem;
+    min-height: calc(100vh - var(--header-height));
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    position: relative;
+    padding: 2rem 0;
 }
 .home_data{
     align-self: center;
+    text-align: center;
 }
 .home_title{
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-5);
+    line-height: 1.3;
 }
 .home_title-color{
     color: var(--first-color);
 }
 .home_social {
     padding-left: 5px;
-    display: block;
-    justify-content: space-between;
-    /* flex-direction: column; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 .home_social-icon {
     width: max-content;
-     justify-content: space-between;
-    margin-bottom: var(--mb-2);
+    margin-bottom: 0;
     font-size: 1.5rem;
     color: var(--second-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .home_social-icon:hover {
     color: var(--first-color);
 }
 .home_img {
-    position: absolute;
-    right: 0;
-    padding-top: 22px;
-    width: 295px;
+    position: relative;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
     z-index: var(--z-back);
+    padding-top: 1rem;
 }
 .home_img img {
     border-radius: 45%;
     z-index: var(--z-back);
+    width: 100%;
+    height: auto;
 }
 
 /* Button */
@@ -240,9 +254,12 @@ a {
     font-weight: var(--font-semi);
     border-radius: 0.5rem;
     z-index: var(--z-fixed);
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
 }
 .button:hover {
-    box-shadow: 0 20px 46px rgba (0, 0, 0, 0.5);
+    box-shadow: 0 20px 46px rgba(0, 0, 0, 0.5);
 }
 
 /* About */
@@ -461,6 +478,23 @@ a {
         grid-template-rows: repeat(2,1fr);
         column-gap: 2rem;
     }
+    .home {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+    .home_data {
+        text-align: left;
+    }
+    .home_social {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .home_img {
+        position: absolute;
+        right: 5%;
+        width: 295px;
+        max-width: 100%;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -474,11 +508,16 @@ a {
 }
 
 @media screen and (max-width: 400px) {
-       .home_title {
-        margin-top: 60px;
+    .home_title {
+        margin-top: 0;
         font-size: var(--h2-font-size);
     }
     .home_img {
-        /* width: 200px; */
+        max-width: 220px;
+    }
+    .button {
+        padding: 0.65rem 1.5rem;
+        font-size: 0.85rem;
+        margin-right: 0.25rem;
     }
 }
