@@ -232,8 +232,8 @@ a {
 }
 .home_img {
     position: relative;
-    width: 500%;
-    max-width: 380px;
+    width: 100%;
+    max-width: 280px;
     margin: 0 auto;
     z-index: var(--z-back);
     padding-top: 1rem;
@@ -241,7 +241,7 @@ a {
 .home_img img {
     border-radius: 45%;
     z-index: var(--z-back);
-    width: 100%;
+    width: 200%;
     height: auto;
 }
 
