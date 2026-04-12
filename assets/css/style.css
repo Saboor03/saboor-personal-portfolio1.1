@@ -242,7 +242,7 @@ a {
     border-radius: 45%;
     z-index: var(--z-back);
     width: 500%;
-    height: auto;
+    height: 500%;
 }
 
 /* Button */
