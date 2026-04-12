@@ -233,7 +233,7 @@ a {
 .home_img {
     position: relative;
     width: 500%;
-    max-width: 280px;
+    max-width: 380px;
     margin: 0 auto;
     z-index: var(--z-back);
     padding-top: 1rem;
