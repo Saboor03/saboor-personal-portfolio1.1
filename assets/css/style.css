@@ -232,7 +232,7 @@ a {
 }
 .home_img {
     position: relative;
-    width: 100%;
+    width: 200%;
     max-width: 280px;
     margin: 0 auto;
     z-index: var(--z-back);
